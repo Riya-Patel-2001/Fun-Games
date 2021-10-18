@@ -1,0 +1,112 @@
+<!-- Motasim Foad worked on this -->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Whac-A-Chuuuuu</title>
+  <meta name="description" content="An webapp for Whac-A-Mole">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Group G">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="../../JS/WAM/wam.js"></script> 
+  <link rel="stylesheet" href="../../CSS/WAM/wam.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://kit.fontawesome.com/15138f295d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+</head>
+
+<body>
+       <nav>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a href="../WAM/wam.html">&nbsp; Whac-A-Chuuuuu &nbsp;</a>|
+                </li>
+                <li class="nav-item">
+                  <a href="../TTT/ttt.html">&nbsp; Tic Tac Toe &nbsp;</a> |
+                </li>
+                <li class="nav-item">
+                    <a href="../../index.html">&nbsp; Sign Out &nbsp;</a> 
+                </li>
+              </ul>
+       </nav>
+    <main>
+      <div class="container">
+       <h1>Whac-A-Chuuuuu</h1>
+       <div id="dialog" title="Times Up!" class="text-center">
+          <p>You played well! <br>Your score : <span id="currentScore"></span></p>
+          <button id="restart" type="button" class="btn btn-light"><i class="fas fa-redo"></i></button>
+          <button id="reload" type="button" class="btn btn-light"><i class="fas fa-home"></i></button>
+       </div>
+       <div id="gameBoard1">
+         <div class="card-group">
+          <div class="card" id="begin1">
+            <img src="https://pa1.narvii.com/6209/856ef61bd283329c2950f833ac88468c93445fc2_hq.gif" class="card-img-top" alt="Image of Pikachu">
+            <div class="card-body">
+              <h5 class="card-title">Pikachu</h5>
+              <p class="card-text"><small class="text-muted">This is the first level. But, dont get your hopes high thingking this will be easy. 
+                Smash as much as <strong>Pikachus</strong> you can in <strong>30 seconds</strong>
+              Remember, every <strong><em>wrong</em></strong> move you make will <strong><em>reduce</em></strong> your score by <strong><em>1</em></strong>. 
+              </small></p>
+            </div>
+          </div>
+         
+          <div class="card" id="begin2">
+            <img src="https://media1.tenor.com/images/4a46096df6658367be453afe2922775a/tenor.gif" class="card-img-top" alt="Image of Raichu">
+            <div class="card-body">
+              <h5 class="card-title">Raichu</h5>
+              <p class="card-text"><small class="text-muted">This is the second level. Raichu is faster then Pikachu so it will be more difficult.
+                Not only that your game time will reduce by 5 seconds.
+                Smash as much as <strong>Raichus</strong> you can in <strong>25 seconds</strong>
+              Remember, every <strong><em>wrong</em></strong> move you make will <strong><em>reduce</em></strong> your score by <strong><em>1</em></strong>. 
+              </small></p>
+            </div>
+          </div>
+
+          <div class="card" id="begin3">
+            <img src="https://i.pinimg.com/originals/7e/b8/e4/7eb8e4d2804d96e7e5b6a314d0ae955c.gif" class="card-img-top" alt="Image of Mewtow">
+            <div class="card-body">
+              <h5 class="card-title">Mewtow</h5>
+                  <p class="card-text"><small class="text-muted">This is the third level. Mewtow is the fastest one. Its the most difficult level on your way
+                    to become a <strong>Pokemon Master</strong>.
+                    Not only that your game time will reduce by 5 seconds.
+                    Smash as much as <strong>Mewtows</strong> you can in <strong>20 seconds</strong> 
+                  Remember, every <strong><em>wrong</em></strong> move you make will <strong><em>reduce</em></strong> your score by <strong><em>1</em></strong>. 
+                  </small></p>
+            </div>
+          </div>
+        </div>
+            </div>
+          </div>
+        </div>
+       </div>
+       <div id="gameBoard2" class="hide">
+        <h3>Your Score : <span id="score">0</span></h3>
+        <img src="../../Assets/Images/WAM/start.png" id="start"></img> 
+       <div class="game">
+           <img id="rocks" value="1" src="../../Assets/Images/WAM/rock.png">
+           <img id="rocks" value="2" src="../../Assets/Images/WAM/rock.png">
+           <img id="rocks" value="3" src="../../Assets/Images/WAM/rock.png">
+           <img id="rocks" value="4" src="../../Assets/Images/WAM/rock.png">
+           <img id="rocks" value="5" src="../../Assets/Images/WAM/rock.png">
+           <img id="rocks" value="6" src="../../Assets/Images/WAM/rock.png">
+           <img id="rocks" value="7" src="../../Assets/Images/WAM/rock.png">
+           <img id="rocks" value="8" src="../../Assets/Images/WAM/rock.png">
+           <img id="rocks" value="9" src="../../Assets/Images/WAM/rock.png">
+        </div>
+       </div>
+      </div>
+      </div>
+    </main>
+  
+<footer>
+    &copy; <span id="year"></span> <a href="#" target="_blank">Fun Games </a>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+</body>
+</html>
