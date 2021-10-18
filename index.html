@@ -1,0 +1,129 @@
+<!--Riya Patel's Page-->
+
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Fun Games</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="./JS/Home/home.js"></script> 
+        <link rel="stylesheet" href="./CSS/Home/home.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+
+    <body>
+
+        <video autoplay muted loop id="myVideo">
+            <source src="4K_207.mp4" type="video/mp4">
+        </video>
+
+        <main>
+            <h1 id="funGames">Fun Games</h1>
+            <div id="tabs">
+                <ul>
+                    <li><a href="#tabs-1" class="navTab">Log In</a></li>
+                    <li><a href="#tabs-2" class="navTab">Sign Up</a></li>
+                </ul>
+                <div id="tabs-1">
+                    <form class="row g-3 needs-validation" novalidate id="logInForm">
+                        <div class="col-md-12">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                            <label for="error" id="err_emailInput" class="error"></label>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+                            <input class="form-control" type="tel" placeholder="Telephone" id="telInput">
+                            <label for="error" id="err_telephone" class="error"></label>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="error" id="err_logInForm" class="error"></label><br>
+                            <button class="btn btn-primary" type="submit" id="logIn">Log In</button>
+                            <button class="btn btn-primary" type="button" id="spinner" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="tabs-2">
+
+                    <form class="row g-3 needs-validation" novalidate id="signUpForm">
+                        <div class="col-md-12">
+                            <label for="validationCustom01" class="form-label">First Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
+                            <label for="error" id="err_firstName" class="error"></label>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="validationCustom02" class="form-label">Last Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
+                            <label for="error" id="err_lastName" class="error"></label>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="userEmail" placeholder="name@example.com">
+                            <label for="error" id="err_userEmail" class="error"></label>
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="example-tel-input" class="col-2 col-form-label">Telephone</label>
+                            <input class="form-control" type="tel" placeholder="Telephone" id="userTelephone">
+                            <label for="error" id="err_userTelephone" class="error"></label>
+
+                        </div>
+
+                        <div class="col-md-12">
+                            <label for="example-date-input" class="col-2 col-form-label">Birth-Date</label>
+                            <input class="form-control" type="date" placeholder="Birth-date" id="birthDateInput">
+                            <label for="error" id="err_birthDateInput" class="error"></label>
+                        </div>
+
+                        <div class="col-12">
+                            <label for="error" id="err_signUpForm" class="error"></label><br>
+                            <button class="btn btn-primary" type="submit" id="signUp">Sign Up</button>
+                            <button class="btn btn-primary" type="button" id="spinner" disabled>
+                                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                Loading...
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="row" id="homePage">
+                <div class="col-sm-12 wlcText">
+                    <h1>Welcome <span id="playerName">Name</span></h1>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Whac-A-Chuuuuu</h5>
+                            <a href="Pages/WAM/wam.html" class="btn btn-primary">Play</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Tic-tac-toe</h5>
+                            <a href="Pages/TTT/ttt.html" class="btn btn-primary">Play</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            &copy; <span id="year"></span> <a href="#" target="_blank">Fun Games </a>
+        </footer>
+    </body>
+</html>
