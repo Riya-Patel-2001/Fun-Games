@@ -1,0 +1,75 @@
+/*Bharagv Desai createtd*/
+
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+body{
+    background-color: #edf285;
+}
+
+
+nav, main, footer{
+    font-family: 'Langar', cursive;
+}
+
+nav{
+    text-align: right;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+.pad-top-20{
+    padding-top: 20px;
+}
+
+.pad-top-40{
+    padding-top: 40px;
+}
+
+table{
+    margin-left: 15%;
+}
+
+footer{
+    text-align: center;
+}
+
+label{
+    margin: 10px;
+}
+
+.start{
+    padding: 8px;
+    margin: 10px;
+}
+
+.start:hover{
+    background-color: green;
+}
+
+.hidden{
+    display: none;
+}
+
+button { 
+    height: 80px; 
+    width: 80px; 
+    background-color: white;
+    border: 2px solid black; 
+    border-radius: 50%; 
+    margin: 4px; 
+    padding: 4px; 
+}
+
+.fa { 
+	font-size: 48px; 
+	color: black; 
+} 
+
+.reset { 
+	padding: 8px;
+    margin: 10px;
+}
+
+.reset:hover{
+    background-color: red;
+}

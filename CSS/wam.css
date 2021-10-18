@@ -1,0 +1,127 @@
+/* Motasim Foad worked on this */
+
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+body{
+    font-family: 'Lobster', cursive;
+    /* background-image: url("https://media.istockphoto.com/vectors/game-background-flat-style-vector-illustration-vector-id601397952?k=6&m=601397952&s=170667a&w=0&h=kq_fZwar6vPa1LQd0yVEiElXc-zJqYyhoGjGGLBlhb0=");
+    background-size: cover; */
+    /* background-repeat: no-repeat; */
+}
+
+footer{
+    text-align: center;
+    font-family: 'Langar', cursive;
+    
+}
+
+nav{
+    text-align: right;
+    font-family: 'Langar', cursive;
+    margin-right: 5%;
+    margin-top: 1%;
+}
+
+main{
+    text-align: center;
+    font-family: 'Langar', cursive;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Langar', cursive;
+}
+h3{
+    font-family: 'Langar', cursive;
+}
+
+#resultHeader{
+    text-decoration: underline;
+}
+
+.container{
+  height: inherit;
+  margin-top: 5%;
+}
+
+.game{
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: url('../../Assets/Images/WAM/rsz_1rsz_cursor.png'), auto;
+}
+
+/* .card-body{
+    background-color: #edf285;
+    color: #ec5858;
+} */
+
+.card-text{
+   font-family: none;
+}
+
+#rocks{
+    height: 150px;
+    width: 150px;
+    margin: 1%;
+}
+
+.hide{
+    display: none;
+}
+
+.lvl1{
+height: 200px;
+width: 100px;
+}
+
+.card-text{
+   text-align: left;
+}
+
+.card{
+    /* padding: 1%; */
+    margin: 1%;
+    opacity: 0.9;
+}
+
+.card:hover{
+    cursor: pointer;
+    border: 1px solid;
+    box-shadow: 5px 10px #ec5858;
+    opacity: 1;
+}
+
+#gameBoard2{
+    /* background-image: url("../../Assets/Images/WAM/bg.jpg");
+    background-size: cover; */
+    height: 70vh;
+}
+
+footer{
+    margin-top: 2%;
+}
+
+#rocks:hover{
+    background-color: #edf285;
+}
+
+#start{
+    height: 5%;
+}
+
+#start:hover{
+    cursor: pointer;
+}
+
+#dialog{
+    font-family: 'Langar', cursive; 
+}
+
+em{
+    color: #ec5858;
+}

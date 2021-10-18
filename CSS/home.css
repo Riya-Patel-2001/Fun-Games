@@ -1,0 +1,107 @@
+/* Riya Patel's Page */
+
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+
+*{
+   font-family: 'Langar', cursive;
+}
+
+#funGames{
+    color: #edf285;
+}
+
+#tabs{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    background-color: #fff;
+    border: none;
+    margin-top: -50px;
+    
+}
+
+#logIn, #signUp {
+    background-color: #fd8c04;
+    color: black;
+    font-weight: bold;
+    border: none;
+    font-family: 'Langar', cursive;
+    
+    
+}
+
+.btn-primary {
+    background-color: #fd8c04 !important;
+    color: black !important;
+    font-weight: bold !important;
+    border: none !important;
+    font-family: 'Langar', cursive;
+}
+
+.card{
+    border: 4px solid black !important;
+}
+
+.navTab{
+    background-color: #fd8c04;
+    color: black;
+    font-weight: bold;
+    border: none;
+    
+}
+
+.error{
+    color: red;
+}
+
+#homePage{
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    display: none;
+    background-color: #fff;
+    padding: 50px;
+    border: none;
+}
+
+.wlcText{
+    color: black;
+}
+
+#spinner{
+    display: none;
+}
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+main{
+    position: fixed;
+    width: 100%;
+    padding: 20px;
+}
+
+.form-label, .col-form-label{
+    font-weight: bold;
+}
+
+.ui-tabs .ui-tabs-active a{
+    color: #fd8c04 !important;
+    background-color: white ;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
